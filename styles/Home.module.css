@@ -1,0 +1,311 @@
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.horarios {
+  display: flex;
+  position: relative;
+}
+
+.titulos {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0 10px;
+
+  margin-bottom: 5px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  border-bottom: 1px solid #f9f9f8;
+  margin-bottom: 5px;
+}
+
+.tarjeta {
+  background: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  z-index: 99;
+  mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 0%,
+    #fff 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.tarjetas {
+  margin-top: 15px;
+}
+
+/*AQUI METEMOS TODO PARA LA ANIMACION DE LOS INPUT */
+.inputBonito input {
+  padding: 10px;
+  background: #f3f3f3;
+  border: none;
+  display: flex;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+.container a,
+.container p {
+  display: flex;
+  justify-content: center;
+}
+
+.container a {
+  color: #0f73e8;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cotnenedor p {
+  color: #111831;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.border {
+  height: 1px;
+  border-bottom: 1px solid #707070;
+  margin: 25px 0;
+  opacity: 0.25;
+}
+
+.contenedor form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contenedor label,
+.contenedor input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+.errorContra {
+  background: #ff5e00;
+  padding: 0;
+  transition: all 0.2s;
+  height: 0;
+  opacity: 0;
+}
+
+p.errorContra {
+  margin: 0;
+}
+
+.errorContra.mostrado {
+  padding: 15px;
+  height: 50px;
+  opacity: 1;
+}
+
+/* TERMINA TODO LO DE LA ANIMACION */
+.formTime {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectCss {
+  display: block;
+  font-size: 16px;
+  color: #686e81;
+  padding: 10px 12px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #d1d6dc;
+  border-radius: 4px;
+}
+
+.selectCss::-ms-expand {
+  display: none;
+}
+
+.selectCss:hover {
+  border-color: #888;
+}
+
+.selectCss:focus {
+  border-color: #0f73e8;
+  color: #222;
+  outline: none;
+}
+
+.selectCss option {
+  font-weight: normal;
+}
+
+.selectCss.error {
+  border: 1px solid #d23200;
+}
+
+.contentName {
+  margin-bottom: 4px;
+  display: block;
+}
+
+.inputBonito.error input {
+  border: 1px solid #d23200;
+}
+
+.inputBonito input {
+  width: 100%;
+  height: 100%;
+  color: #111831;
+  padding: 10px 12px;
+  border: none;
+  border: 1px solid #d1d6dc;
+  border-radius: 4px;
+  background-color: transparent;
+  font-weight: 300;
+  cursor: text;
+  font-size: 16px;
+}
+
+.inputBonito input:focus {
+  outline: none;
+  border: none;
+  border: 1px solid #1a70eb;
+  border-radius: 4px;
+  box-shadow: none;
+  color: #111831;
+}
+
+.inputBonito textarea {
+  resize: none;
+  overflow: auto;
+  padding: 10px;
+  font-family: "Lato";
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #d1d6dc;
+}
+
+.inputBonito textarea:focus {
+  border-color: #0f73e8;
+}
+
+.tituloModal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tipoDeCita {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBonito {
+  margin: 0 0 30px 0;
+}
+
+.vacio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.paddingTitulo {
+  padding: 0 15px;
+}
+
+.mensajeError {
+  color: #d23200;
+  font-size: 14px;
+}
+
+.aksInput {
+  padding: 20px;
+  height: 15px;
+  width: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor {
+    flex-direction: row;
+  }
+
+  .container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loginCentrado {
+    max-width: 345px;
+    width: 345px;
+  }
+
+  .container h1 {
+    font-size: 44px;
+  }
+}
+
+.degradado {
+  position: sticky;
+  bottom: 0;
+  height: 30px;
+  background: #f9f9f8;
+  mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f9f9f8 80%);
+}
+
+.minusculas {
+  text-transform: lowercase;
+}
+
+.yaTienesCuenta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nombreTipoCita {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.btn {
+  background-color: #0f73e8;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 700;
+}
